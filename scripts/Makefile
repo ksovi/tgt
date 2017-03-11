@@ -1,4 +1,4 @@
-sbindir ?= $(PREFIX)/sbin
+sbindir ?= $(PREFIX)/bin
 
 SCRIPTS += tgt-setup-lun tgt-admin
 
