@@ -735,7 +735,7 @@ static tgtadm_err sbc_lu_init(struct scsi_lu *lu)
 	if (spc_lu_init(lu))
 		return TGTADM_NOMEM;
 
-	strncpy(lu->attrs.product_id, "VIRTUAL-DISK", sizeof(lu->attrs.product_id));
+	strncpy(lu->attrs.product_id, "ARCHLINUX-LUN", sizeof(lu->attrs.product_id));
 	lu->attrs.version_desc[0] = 0x04C0; /* SBC-3 no version claimed */
 	lu->attrs.version_desc[1] = 0x0960; /* iSCSI */
 	lu->attrs.version_desc[2] = 0x0300; /* SPC-3 */
