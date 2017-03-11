@@ -1,4 +1,4 @@
-sbindir ?= $(PREFIX)/sbin
+sbindir ?= $(PREFIX)/bin
 libdir ?= $(PREFIX)/lib/tgt
 
 ifneq ($(shell test -e /usr/include/linux/signalfd.h && echo 1),)
