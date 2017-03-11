@@ -2073,9 +2073,9 @@ int spc_lu_init(struct scsi_lu *lu)
 	snprintf(lu->attrs.product_rev, sizeof(lu->attrs.product_rev),
 		 "%s", "0001");
 	snprintf(lu->attrs.scsi_id, sizeof(lu->attrs.scsi_id),
-		 "IET     %04x%04" PRIx64, tgt->tid, lu->lun);
+		 "ARCHLINUX     %04x%04" PRIx64, tgt->tid, lu->lun);
 	snprintf(lu->attrs.scsi_sn, sizeof(lu->attrs.scsi_sn),
-		 "beaf%d%" PRIu64, tgt->tid, lu->lun);
+		 "archlinux%d%" PRIu64, tgt->tid, lu->lun);
 	lu->attrs.numeric_id = tgt->tid;
 	lu->attrs.numeric_id <<= 32;
 	lu->attrs.numeric_id |= lu->lun;
